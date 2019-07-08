@@ -1,15 +1,11 @@
 # Introduction
-This script is make for create rainbow table of all the password on a file
+This script generate rainbowtable from a file with hashlib
 
-# Requirement
-The input file has to be named "password.txt" each different password has to be on a different line
+# Input file
+One password on each line
 
-# Option
--a algorith to use (default md5)
--f file as input (default ./password.txt)
-
-## Availible
-md5, SHA1, 
+# Usage
+`python3 generate_rainbow.py "algorithm" "file"`
 
 # Exemple
-python3 generate_rainbow.py -a md5
+`python3 generate_rainbow.py md5 ./password.txt`
