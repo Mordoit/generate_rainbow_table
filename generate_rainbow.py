@@ -1,9 +1,11 @@
-# /usr/bin/python3
+#!/usr/bin/env python
 
-# Introduction : Generate rainbow table with different algo
-# Authors : Troyan
+__author__ = "Robin Baeriswyl"
+__version__ = "1.0.0"
+__email__ = "mordoit@protonmail.com"
 
-# importe used library
+
+# Import library
 import hashlib
 import sys
 import os
