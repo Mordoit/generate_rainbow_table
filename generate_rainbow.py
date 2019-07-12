@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 __author__ = "Mordoit"
-__version__ = "1.0.2"
+__version__ = "1.0.3"
 __email__ = "mordoit@protonmail.com"
 
 
@@ -14,10 +14,6 @@ import os
 def error():  # Print the error and exit the program
     print("generate_rainbow.py\n-------------------\nAuthor: Mordoit \n \nalgorithm supported is the same than the hashlib \nsha1, md5, sha224, sha256, sha384, sha512, blake2b, blake2s, sha3_224, sha3_256, sha3_384, sha3_512 \ngenerate_rainbow.py 'algorithmm' 'path' \n\nExemple: generate_rainbow.py md5 ./password.txt")
     exit()
-
-
-if sys.argv[1] == "help" or sys.argv[2] == "help" or:
-    error()
 
 
 def main():  # Controler
@@ -41,6 +37,9 @@ def rainbow():  # Generate the rainbow table
             for line in f:
                 exec(generate)
 
+# Help page
+if sys.argv[1] == "help" or sys.argv[2] == "help":
+    error()
 
 # Set parameter as variable
 algo = sys.argv[1]
