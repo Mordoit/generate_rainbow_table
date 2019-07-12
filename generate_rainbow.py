@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 __author__ = "Mordoit"
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __email__ = "mordoit@protonmail.com"
 
 
@@ -12,7 +12,7 @@ import os
 
 # Print the error and exit the program
 def error():
-    print("generate_rainbow.py\n-------------------\nAuthor: Troyan \n \nalgorithm supported is the same than the hashlib \nsha1, md5, sha224, sha256, sha384, sha512, blake2b, blake2s, sha3_224, sha3_256, sha3_384, sha3_512 \ngenerate_rainbow.py 'algorithmm' 'path' \n\nExemple: generate_rainbow.py md5 ./password.txt")
+    print("generate_rainbow.py\n-------------------\nAuthor: Mordoit \n \nalgorithm supported is the same than the hashlib \nsha1, md5, sha224, sha256, sha384, sha512, blake2b, blake2s, sha3_224, sha3_256, sha3_384, sha3_512 \ngenerate_rainbow.py 'algorithmm' 'path' \n\nExemple: generate_rainbow.py md5 ./password.txt")
     exit()
 
 if sys.argv[1] == "help" or sys.argv[2] == "help":
@@ -33,8 +33,8 @@ def main():
 # Check if all the parameter are correct and supported
 def check():
     exists = os.path.isfile(file)
-    support_Arg = ["sha1", "md5", "sha224", "sha256", "sha384", "sha512", "blake2b", "blake2s", "sha3_224", "sha3_256", "sha3_384", "sha3_512"]
-    if algo not in support_Arg and not exists:
+    support_arg = ["sha1", "md5", "sha224", "sha256", "sha384", "sha512", "blake2b", "blake2s", "sha3_224", "sha3_256", "sha3_384", "sha3_512"]
+    if algo not in support_arg and not exists:
         error()
 
 # generate the rainbow table
